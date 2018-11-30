@@ -17,6 +17,7 @@
 
 
 /* Hidden Objects */
+/* THis is just so that I have all these objects hidden in the print version of the code. */
 nav, footer, article {
     display: none;
 }
@@ -26,6 +27,7 @@ nav, footer, article {
 
 
 /* Comic Book Sheet Styles */
+/* I understand that I could have done this short hand but I separated them anyways. The shorthand would make it faster but I already typed it out. The id of sheet is affected and I change the width and margins as appropriate. */
 section#sheet {
     width: 6in;
     margin-top: 0in;
@@ -33,6 +35,7 @@ section#sheet {
     margin-left: auto;
     margin-right: auto;
 }
+/* These are to call the classes that are panel size and even though it has a space, I can use the last full word to select it correctly. */
 .size1 {
     width: 5in;
 }

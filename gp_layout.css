@@ -22,16 +22,19 @@
 @import url("gp_designs.css");
 
 /* Flex Layout Styles */
+/* Whenever I want to make it something flexbox I need to say that it has a display of flex and it has to be for all types of browsers, so you do the old webkit version and make one for it normally. */
 body {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
 }
+/* The section with an id of sheet is where I make the flex changes and since the flex display is taken down from the body element. */
 section#sheet {
     -webkit-flex: 3 1 301px;
     flex: 3 1 301px;
 }
+/* Same works with this I have the ratios different and the base pixels. */
 article {
     -webkit-flex: 1 3 180px;
     flex: 1 3 180px;
@@ -63,6 +66,7 @@ article {
 	Tablet and Desktop Devices: Greater than 480 pixels
    ===================================================
 */
+/* This is to make changes to only one type of media which is the mobile. Then inside those parameters are the changes that I want to make. */
 @media only screen and (min-width: 481px) {
     nav.horizontal ul {
         display: -webkit-flex;
